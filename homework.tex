@@ -1,5 +1,45 @@
 \documentclass[a4paper,12pt]{article}
-
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\title{コンピュータゼミ2018宿題}
 \begin{document}
-
-\end{document}
+\maketitle
+\section{1}
+私達の研究室では主にシステムやソフトウェアの信頼性に関する研究を行っています。主にそれらを確率論によってモデル化し、解析することで信頼性の評価を行います。具体的には以下の様な確率過程を用いること多いです。
+\begin{itemize}
+\item NHPP
+\item CTMC
+\end{itemize}
+\section{2}
+卒業論文や現行の作成のさいにはLATEXを使って文章を作成します。LATEXは数式などを含むような文章を綺麗に作成するための言語です。
+\section{3}
+確率変数$X$が指数分布に従うとき、その分布関数$F_{X}(t)$と密度関数$f_{X}(t)$は、
+\begin{equation}
+F_{X}(t) = 1-e^{-{\lambda} t}
+\end{equation}
+\begin{equation}
+f_{X}(t) = {\lambda}e^{-{\lambda}t}
+\end{equation}
+となる。またその期待値は定義より、
+\begin{equation}
+\begin{aligned}
+    E[X]&=\int_{0}^{\infty}tf_{X}(t)dt\\
+        &=[(1-e^{-{\lambda}t})t]^\infty_{0}-\int_{0}^{\infty}(1-e^{-{\lambda}t})dt\\
+        &=[(1-e^{-{\lambda}t})t]^\infty_{0}-[t+\frac{1}{{\lambda}}e^{-{\lambda}t}]^\infty_{0}\\
+        &=\frac{1}{{\lambda}}
+\end{aligned}
+\end{equation}
+となる。(extra宿題:式(3)を導出してみよう　ヒント:部分積分)
+\section{4}
+表を作ることもできます
+\begin{table}[!hbt]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+1&2&3\\
+\hline
+${\alpha}$&${\beta}$&${\gamma}$  \\
+\hline
+\end{tabular}
+\end{table}{tabular}
+\end{document}}
